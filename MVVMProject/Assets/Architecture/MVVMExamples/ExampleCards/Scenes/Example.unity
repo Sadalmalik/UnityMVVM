@@ -1462,6 +1462,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetField: currentCard
+  children: []
 --- !u!1 &963872366
 GameObject:
   m_ObjectHideFlags: 0
@@ -3013,8 +3014,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1766855641}
   - component: {fileID: 1766855642}
-  - component: {fileID: 1766855643}
   - component: {fileID: 1766855644}
+  - component: {fileID: 1766855643}
   m_Layer: 5
   m_Name: Panel
   m_TagString: Untagged
@@ -3056,6 +3057,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetField: 
+  children: []
 --- !u!114 &1766855643
 MonoBehaviour:
   m_ObjectHideFlags: 0
