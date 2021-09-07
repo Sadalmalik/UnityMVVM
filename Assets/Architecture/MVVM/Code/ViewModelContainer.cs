@@ -45,21 +45,25 @@ namespace Sadalmalik.MVVM
         {
             base.SetModel(model);
             
-            Debug.Log($"[TEST] ViewModelContainer {gameObject}: distribute model {Value}");
-            
             foreach (var child in children)
-            {
                 child.SetModel(Value);
-            }
         }
         
         public override void UpdatedModel()
         {
+            var oldValue = Value;
+        
             base.UpdatedModel();
             
-            foreach (var child in children)
+            if (oldValue != Value)
             {
-                child.UpdatedModel();
+                foreach (var child in children)
+                    child.SetModel(Value);
+            }
+            else
+            {
+                foreach (var child in children)
+                    child.UpdatedModel();
             }
         }
     }
