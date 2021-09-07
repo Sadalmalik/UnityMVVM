@@ -25,7 +25,7 @@ namespace Sadalmalik.ExampleMVVM
             
             cardsModel.currentCard = new Card();
             
-            viewModel.UpdatedModel();
+			viewModel.SetModel(cardsModel);
 		}
 	}
 }

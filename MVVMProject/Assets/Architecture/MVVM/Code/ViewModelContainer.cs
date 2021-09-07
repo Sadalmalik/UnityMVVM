@@ -45,6 +45,8 @@ namespace Sadalmalik.MVVM
         {
             base.SetModel(model);
             
+            Debug.Log($"[TEST] ViewModelContainer {gameObject}: distribute model {Value}");
+            
             foreach (var child in children)
             {
                 child.SetModel(Value);

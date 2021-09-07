@@ -20,7 +20,7 @@ namespace Sadalmalik.MVVM
             base.Refresh();
             
             _ignoreChange = true;
-            label.text = Value.ToString();
+            label.text = Value?.ToString();
             _ignoreChange = false;
         }
         
